@@ -5,11 +5,11 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [],
+  afterBody: [Component.RecentNotes()],
   footer: Component.Footer({
     links: {
-      repo: "https://github.com/rexarski/how2",
-      blog: "https://rexarski.com",
+      代码仓库: "https://github.com/rexarski/how2",
+      博客: "https://rexarski.com",
     },
   }),
 }
